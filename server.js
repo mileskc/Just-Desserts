@@ -3,7 +3,8 @@
 //___________________
 const express = require('express');
 const mongoose = require ('mongoose');
-const app = express ();
+const app = express();
+const methodOverride = require('method-override');
 //___________________
 //Port
 //___________________
@@ -16,10 +17,20 @@ const PORT = process.env.PORT || 3000;
 // How to connect to the database either via heroku or locally
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/JustDesserts'
 
+//Middleware
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static('public'))
+app.use(methodOverride('_method'));
+
+//Controllers
+const mainController = require('./controllers/main.js')
+app.use('/', mainController);
+
 // Connect to Mongo
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
 	console.log('connected to mongo database')
 });
+
 
 //___________________
 // Routes
@@ -28,18 +39,6 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
 app.get('/' , (req, res) => {
   res.redirect('/justdesserts');
 });
-
-app.get('/justdesserts', (req, res) => {
-    res.send('main page')
-})
-
-app.get('/justdesserts/alldesserts', (req, res) => {
-    res.send('dessert index')
-})
-
-app.get('justdesserts/alldesserts/:id', (req, res) => {
-    res.send('show pages')
-})
 
 //___________________
 //Listener
