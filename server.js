@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 //Database
 //___________________
 // How to connect to the database either via heroku or locally
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/DB_NAME'
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/JustDesserts'
 
 // Connect to Mongo
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
@@ -26,8 +26,20 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
 //___________________
 //localhost:3000
 app.get('/' , (req, res) => {
-  res.send('app is running!');
+  res.redirect('/justdesserts');
 });
+
+app.get('/justdesserts', (req, res) => {
+    res.send('main page')
+})
+
+app.get('/justdesserts/alldesserts', (req, res) => {
+    res.send('dessert index')
+})
+
+app.get('justdesserts/alldesserts/:id', (req, res) => {
+    res.send('show pages')
+})
 
 //___________________
 //Listener
