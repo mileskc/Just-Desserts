@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Dessert</title>
+</head>
+<body>
+ <div class = "page">
+        <header>
+            <h1>Just Desserts</h1>
+            <a href = "/justdesserts/alldesserts">Back to Main Dessert Page!</a>
+        </header>
+        <main>
+            <h2>Create New Product</h2>
+            <form action = "/justdesserts/alldesserts" method = POST>
+                <label for = "name">Name</label>
+                <input type = "text" name = "name" id = "name">
+                <label for = "img">Img URL</label>
+                <input type = "text" name = "img" id = "img">
+                <label for = "neighborhood">neighborhood</label>
+                <input type = "text" name = "neighborhood" id = "neighborhood">
+                <label for = "description">Description</label>
+                <textarea name="description" id = "description" rows="10" cols="30">Description here</textarea>
+                <label for = "rating">Rating</label>
+                <input type = "number" name = "rating" id = "rating">
+                <input class = "submit" type = "submit" value = "Submit Product">
+            </form>    
+        </main>
+    </div>    
+</body>
+</html>

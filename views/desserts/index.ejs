@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desserts</title>
+</head>
+<body>
+    <header>
+        <h1>Main page with all desserts</h1>
+        <h1><%=desserts[0].name%></h1>
+        <% for (let i = 0; i < desserts.length; i++) { %>
+            <div class = "item">
+                    <%=desserts[i].name%></a><h3><%=desserts[i].neighborhood%></h3>
+                    <br>
+                    <img src = "<%=desserts[i].img%>">
+            <%}%>
+        <a href = "alldesserts/new">Create New Dessert!</a>
+    </header>
+</body>
+</html>

@@ -40,6 +40,18 @@ app.get('/' , (req, res) => {
   res.redirect('/justdesserts');
 });
 
+
+// seed data
+// const seed = require('./models/seed.js');
+// const Dessert = require('./models/desserts.js');
+// app.get('/justdesserts/seedDesserts', (req, res) => {
+//   Dessert.insertMany(seed, (err, createdDesserts) => {
+//     // logs created users
+//     console.log(createdDesserts);
+//     // redirects to index
+//     res.redirect('/justdesserts/alldesserts');
+//   });
+// });
 //___________________
 //Listener
 //___________________

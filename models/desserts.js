@@ -5,12 +5,12 @@ const Schema = mongoose.Schema;
 const dessertSchema = Schema( {
     name: String,
     img: String,
-    borough: String,
+    neighborhood: String,
     description: String,
     rating: Number
 })
 
 
-const Dessert = mongoose.model('User', dessertSchema);
+const Dessert = mongoose.model('Dessert', dessertSchema);
 
 module.exports = Dessert;
