@@ -9,13 +9,16 @@
 <body>
     <header>
         <h1>Main page with all desserts</h1>
+        <a href = "alldesserts/new">Create New Dessert!</a>
         <% for (let i = 0; i < desserts.length; i++) { %>
             <div class = "item">
                     <h1><a href = "alldesserts/<%=desserts[i].id%>"><%=desserts[i].name%></a></h1><h3><%=desserts[i].neighborhood%></h3>
                     <br>
                     <img src = "<%=desserts[i].img%>">
+                    <form action = "alldesserts/<%=desserts[i].id%>?_method=DELETE" method = "POST">
+                        <input type = "submit" value = "Delete">
+                    </form>
             <%}%>
-        <a href = "alldesserts/new">Create New Dessert!</a>
     </header>
 </body>
 </html>

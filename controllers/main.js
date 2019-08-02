@@ -37,6 +37,13 @@ router.post('/justdesserts/alldesserts', (req, res) => {
     });
 })
 
+//Delete
+router.delete('/justdesserts/alldesserts/:id', (req, res) => {
+    Dessert.findByIdAndRemove(req.params.id, (error, deletedDessert) => {
+        res.redirect('/justdesserts/alldesserts')
+    })
+})
+
 // app.get('/store', (req, res) => {
 //     Product.find({}, (error, allProducts) => {
 //         res.render('index.ejs', {
