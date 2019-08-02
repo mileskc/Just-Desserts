@@ -21,6 +21,15 @@ router.get('/justdesserts/alldesserts/new', (req, res) => {
     res.render('desserts/new.ejs')
 })
 
+router.get('/justdesserts/alldesserts/:id', (req, res) => {
+    Dessert.findById(req.params.id, (error, foundDessert) => {
+        res.render('desserts/show.ejs', {
+            dessert: foundDessert
+        })
+    })
+    // res.send('show')
+})
+
 router.post('/justdesserts/alldesserts', (req, res) => {
     Dessert.create(req.body, (err, createdUser)=>{
         console.log(req.body.rating)

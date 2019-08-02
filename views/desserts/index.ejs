@@ -9,10 +9,9 @@
 <body>
     <header>
         <h1>Main page with all desserts</h1>
-        <h1><%=desserts[0].name%></h1>
         <% for (let i = 0; i < desserts.length; i++) { %>
             <div class = "item">
-                    <%=desserts[i].name%></a><h3><%=desserts[i].neighborhood%></h3>
+                    <h1><a href = "alldesserts/<%=desserts[i].id%>"><%=desserts[i].name%></a></h1><h3><%=desserts[i].neighborhood%></h3>
                     <br>
                     <img src = "<%=desserts[i].img%>">
             <%}%>
