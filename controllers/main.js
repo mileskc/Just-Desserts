@@ -17,10 +17,21 @@ router.get('/justdesserts/alldesserts', (req, res) => {
     })
 })
 
+//new
 router.get('/justdesserts/alldesserts/new', (req, res) => {
     res.render('desserts/new.ejs')
 })
 
+//edit
+router.get('/justdesserts/alldesserts/:id/edit', (req, res) => {
+    Dessert.findById(req.params.id, (error, foundDessert) =>{
+        res.render('desserts/edit.ejs', {
+            dessert: foundDessert
+        })
+    })
+})
+
+//show route
 router.get('/justdesserts/alldesserts/:id', (req, res) => {
     Dessert.findById(req.params.id, (error, foundDessert) => {
         res.render('desserts/show.ejs', {
@@ -30,6 +41,7 @@ router.get('/justdesserts/alldesserts/:id', (req, res) => {
     // res.send('show')
 })
 
+//Create
 router.post('/justdesserts/alldesserts', (req, res) => {
     Dessert.create(req.body, (err, createdUser)=>{
         console.log(req.body.rating)
@@ -44,14 +56,14 @@ router.delete('/justdesserts/alldesserts/:id', (req, res) => {
     })
 })
 
-// app.get('/store', (req, res) => {
-//     Product.find({}, (error, allProducts) => {
-//         res.render('index.ejs', {
-//             products: allProducts
-//         })
-//     })
-//     // res.send('store index')
-// })
+//Update
+router.put('/justdesserts/alldesserts/:id', (req, res) => {
+    Dessert.findByIdAndUpdate(req.params.id, req.body, {new:true}, (error, updatedDessert) => {
+        res.redirect(`/justdesserts/alldesserts/${req.params.id}`)
+    })
+})
+
+
 
 // app.get('justdesserts/alldesserts/:id', (req, res) => {
 //     res.send('show pages')
