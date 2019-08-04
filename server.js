@@ -25,6 +25,8 @@ app.use(methodOverride('_method'));
 //Controllers
 const mainController = require('./controllers/main.js')
 app.use('/', mainController);
+const bkController = require('./controllers/brooklyn.js')
+app.use('/', bkController);
 
 // Connect to Mongo
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
