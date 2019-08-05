@@ -11,4 +11,14 @@ router.get('/justdesserts/brooklyn', (req, res) => {
     })
 })
 
+//bk show route
+router.get('/justdesserts/brooklyn/:id', (req, res) => {
+    Dessert.findById(req.params.id, (error, foundDessert) => {
+        res.render('brooklyn/show.ejs', {
+            dessert: foundDessert
+        })
+    })
+    // res.send('show')
+})
+
 module.exports = router;

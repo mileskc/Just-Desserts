@@ -17,15 +17,6 @@ router.get('/justdesserts/alldesserts', (req, res) => {
     })
 })
 
-//brooklyn index page
-router.get('/justdesserts/brooklyn', (req, res) => {
-    Dessert.find({}, (error, bkDesserts) => {
-        res.render('brooklyn/index.ejs', {
-            desserts: bkDesserts
-        })
-    })
-})
-
 //new
 router.get('/justdesserts/alldesserts/new', (req, res) => {
     res.render('desserts/new.ejs')

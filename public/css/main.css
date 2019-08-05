@@ -1,10 +1,10 @@
+/* Header */
+
 header {
     background-image: url('https://images.unsplash.com/photo-1516478379578-ea8bea43365f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
     background-size: 100%;
     background-position: -2px -150px;
     height: 400px;
-    position: relative;
-    display: block;
 }
 
 h1 {
@@ -12,9 +12,18 @@ h1 {
     text-align: right;
     font-size: 80px;
     color: white;
+    font-family: 'Codystar', cursive;
 }
 
 nav {
-    margin-top: 210px;
+    margin-top: 200px;
+    font-size: 20px;
 }
 
+/* Main Content */
+
+p {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+}

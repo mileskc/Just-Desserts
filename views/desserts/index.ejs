@@ -11,7 +11,15 @@
 <body>
     <header>
         <h1>Just Desserts</h1>
-        <h3><a href = "/justdesserts">Home</a></h3>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(2, 2, 2, .1);">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link" href = "/justdesserts">Home</a>
+                <a class="nav-item nav-link" href = "/justdesserts/alldesserts">Desserts</a>
+                <a class="nav-item nav-link" href = "/justdesserts/brooklyn">Brooklyn</a>
+                <a class="nav-item nav-link" href = "/justdesserts/queens">Queens</a>
+                <a class="nav-item nav-link" href = "/justdesserts/manhattan">Manhattan</a>
+                </div>
+        </nav>
     </header>
     <main>
         <h2>Main page with all desserts</h2>
@@ -19,7 +27,7 @@
         <div class="container">
             <div class="row">
             <% for (let i = 0; i < desserts.length; i++) { %>
-                <div class="col-sm-3">
+                <div class="col-sm">
                     <div class="card" style="width: 18rem;">
                         <div class = "item">
                             <img src = "<%=desserts[i].img[0]%>" class="card-img-top">
@@ -42,7 +50,7 @@
         <div class="container">
             <div class="row">
             <% for (let i = 0; i < desserts.length; i++) { %>
-                <div class="col-sm-3">
+                <div class="col-sm">
                     <% for (let j = 0; j < desserts[i].borough.length; j++) { %>
                         <% if (desserts[i].borough[j] === "Brooklyn") { %>
                     <div class="card" style="width: 18rem;">

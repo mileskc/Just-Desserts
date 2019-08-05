@@ -27,6 +27,10 @@ const mainController = require('./controllers/main.js')
 app.use('/', mainController);
 const bkController = require('./controllers/brooklyn.js')
 app.use('/', bkController);
+const qnsController = require('./controllers/queens.js')
+app.use('/', qnsController);
+const mtnController = require('./controllers/manhattan.js')
+app.use('/', mtnController);
 
 // Connect to Mongo
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
