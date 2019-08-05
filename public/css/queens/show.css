@@ -22,7 +22,7 @@ nav {
 img {
     display: block;
     margin: 0 auto;
-    width: 400px;
+    width: 300px;
 }
 
 h2, h3 {
@@ -37,4 +37,8 @@ h2 {
 h3 {
     margin: 30px;
     font-size: 40px
+}
+
+ul {
+    text-align: center;
 }
