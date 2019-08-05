@@ -47,7 +47,7 @@ let seedDesserts = [
     },
     { 
         name: 'Levain',
-        img: ['https://www.stripesgroup.com/system/uploads/investment/logo_image/49/logo.gif'],
+        img: ['https://www.stripesgroup.com/system/uploads/investment/logo_image/49/logo.gif', 'https://www.modernhoney.com/wp-content/uploads/2016/07/IMG_8253.jpg', 'https://cdn.vox-cdn.com/thumbor/XhS8Z20vgkGN35iow_eVt23Is-M=/0x0:960x720/1200x800/filters:focal(404x284:556x436)/cdn.vox-cdn.com/uploads/chorus_image/image/63263389/12832534_10154005328284530_2573137778309631672_n.0.jpg', 'https://i2.wp.com/www.kaiandthekitchen.com/wp-content/uploads/2018/10/levain-cookies-3.jpg?resize=1024%2C617&ssl=1'],
         neighborhood: ['Upper West Side', 'Harlem'],
         borough: ['Manhattan'],
         addressBk: [String],
@@ -60,7 +60,7 @@ let seedDesserts = [
     },
     { 
         name: 'Birdbath',
-        img: ['https://www.social-ink.net/wp-content/uploads/city-bakery_logo_socialInk.jpg'],
+        img: ['https://www.social-ink.net/wp-content/uploads/city-bakery_logo_socialInk.jpg', 'https://i.pinimg.com/originals/1f/91/4a/1f914ad7c013728214f062cd2999bba5.jpg', 'https://i.pinimg.com/originals/e5/b3/23/e5b3237ffb8c7cbd3a256f5689ae660f.jpg', 'http://thecitybakery.com/wp-content/uploads/2015/08/Birdbath_CB5_436x226.jpg'],
         neighborhood: ['Soho, Midtown East'],
         borough: ['Manhattan'],
         addressBk: [String],
@@ -72,7 +72,7 @@ let seedDesserts = [
     },
     { 
         name: 'Morgenstern\'s',
-        img: ['http://static1.squarespace.com/static/5314b53ae4b0aeaef77036b7/5575d0c6e4b03ba05364d38a/5575d0f0e4b090675afb33d6/1532623215368/MFIC+-+Gift+Card+01.png?format=1500w'],
+        img: ['http://static1.squarespace.com/static/5314b53ae4b0aeaef77036b7/5575d0c6e4b03ba05364d38a/5575d0f0e4b090675afb33d6/1532623215368/MFIC+-+Gift+Card+01.png?format=1500w', 'https://pixel.nymag.com/imgs/daily/grub/2018/10/11/morgensterns-west-houston/morgensterns_040.w1200.h630.jpg', 'http://cdn.firstwefeast.com/assets/2015/06/kanye-x-morgensterns_95.jpg', 'https://pixel.nymag.com/imgs/daily/grub/2018/10/11/morgensterns-west-houston/morgensterns_038.w700.h467.2x.jpg'],
         neighborhood: ['Lower East Side, Greenwich Village'],
         borough: ['Manhattan'],
         addressBk: [String],
@@ -84,7 +84,7 @@ let seedDesserts = [
     },
     { 
         name: 'Farmacy',
-        img: ['https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/53145688_2370849732949543_6116083109390712832_n.jpg?_nc_cat=107&_nc_oc=AQk4JV3iuOv1zjDO3MIw3ue1ld2hy2lDxm1c-GeOX5nBQpOBwBhTvkyPD8Xwff18W0A&_nc_ht=scontent-lga3-1.xx&oh=4742ac0163026c6c4da036fbe6ac7ba8&oe=5DD41745'],
+        img: ['https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/53145688_2370849732949543_6116083109390712832_n.jpg?_nc_cat=107&_nc_oc=AQk4JV3iuOv1zjDO3MIw3ue1ld2hy2lDxm1c-GeOX5nBQpOBwBhTvkyPD8Xwff18W0A&_nc_ht=scontent-lga3-1.xx&oh=4742ac0163026c6c4da036fbe6ac7ba8&oe=5DD41745', 'https://i.imgur.com/hws2SSP.png', 'https://i.imgur.com/WBUvUn3.png', 'https://i.imgur.com/7Vllkhc.png'],
         neighborhood: ['Carroll Gardens'],
         borough: ['Brooklyn'],
         addressBk: ['513 Henry St, Brooklyn, NY 11231'],
@@ -96,7 +96,7 @@ let seedDesserts = [
     },
     {
         name: 'Milkmade',
-        img: ['https://pbs.twimg.com/profile_images/663087426315882496/Dy9XICAO.png'],
+        img: ['https://pbs.twimg.com/profile_images/663087426315882496/Dy9XICAO.png', 'https://pixel.nymag.com/imgs/daily/grub/2015/05/27/27-milkmade03.w710.h473.jpg', 'http://s3.amazonaws.com/trycaviar.com/offers/6248/285649-201706151946.jpg', 'https://assets.dnainfo.com/generated/photo/2015/05/5271110151226494652310447832823o-1432052234.jpg/larger.jpg'],
         neighborhood: ['Carroll Gardens'],
         borough: ['Brooklyn'],
         addressBk: ['204 Sackett St, Brooklyn, NY 11231'],
@@ -108,7 +108,7 @@ let seedDesserts = [
     },
     {
         name: 'The Chocolate Room',
-        img: ['http://thechocolateroombrooklyn.com/image_warehouse/TCR-RGB-logo-wTM_640px.png'],
+        img: ['http://thechocolateroombrooklyn.com/image_warehouse/TCR-RGB-logo-wTM_640px.png', 'https://www.thechocolateroombrooklyn.com/cafes/specialties/files/medium_231519.jpg', 'http://newyork.cbslocal.com/wp-content/uploads/sites/14578484/2012/08/frozen-hot-chocolate2.jpg', 'https://dqzrr9k4bjpzk.cloudfront.net/images/476015/784801152.jpg'],
         neighborhood: ['Cobble Hill', 'Park Slope'],
         borough: ['Brooklyn'],
         addressBk: ['269 Court St., Brooklyn, NY 11231', '51 Fifth Ave., Brooklyn, NY 11217'],
@@ -123,7 +123,7 @@ let seedDesserts = [
     // },
     {
         name: 'Four and Twenty Blackbirds',
-        img: ['https://playco.org/wp-content/uploads/2018/12/Four-Twenty-Blackbirds-Logo.jpg'],
+        img: ['https://playco.org/wp-content/uploads/2018/12/Four-Twenty-Blackbirds-Logo.jpg', 'https://www.ediblebrooklyn.com/wp-content/uploads/sites/2/2017/05/fourandtwentyblackbirds_VickyWasik-32.jpg', 'https://www.wholefoodsmarket.com/sites/default/files/media/Four_Twenty_Feature1_0.jpg', 'https://sagharborexpress.com/wp-content/uploads/2017/11/HA-Four-and-Twenty-Blackbirds-Chocolate-Chess_courtesy.jpg'],
         neighborhood: ['Gowanus'],
         borough: ['Brooklyn'],
         addressBk: ['439 3rd Avenue, Brooklyn 11215'],
@@ -135,7 +135,7 @@ let seedDesserts = [
     },
     {
         name: 'Two Little Red Hens',
-        img: ['http://castlesandcooks.com/wp-content/uploads/2013/05/TwoLittleRedHens.png'],
+        img: ['http://castlesandcooks.com/wp-content/uploads/2013/05/TwoLittleRedHens.png', 'http://3.bp.blogspot.com/-rImYVHZZlZg/UkjElupBPVI/AAAAAAAAApU/DiNZlhXdb_A/s1600/IMG_2991.JPG', 'https://static1.squarespace.com/static/5c282addc3c16a3f1c3d8855/5c28303c1ae6cf9b88409260/5c2849edaa4a995f08a519ff/1552150906823/two-little-red-hens_13130263644_o.jpg?format=2500w', 'http://dessertbuzz.com/wp-content/uploads/2012/02/Two-red-hens-3.jpg'],
         neighborhood: ['Upper East Side'],
         borough: ['Manhattan'],
         addressBk: ['1652 2nd Ave, New York, NY 10028'],
