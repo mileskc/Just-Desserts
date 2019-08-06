@@ -26,7 +26,9 @@ router.get('/justdesserts/alldesserts', (req, res) => {
 
 //new
 router.get('/justdesserts/alldesserts/new', (req, res) => {
-    res.render('desserts/new.ejs')
+    res.render('desserts/new.ejs', {
+        currentUser: req.session.currentUser
+    })
 })
 
 
@@ -34,7 +36,8 @@ router.get('/justdesserts/alldesserts/new', (req, res) => {
 router.get('/justdesserts/alldesserts/:id/edit', (req, res) => {
     Dessert.findById(req.params.id, (error, foundDessert) =>{
         res.render('desserts/edit.ejs', {
-            dessert: foundDessert
+            dessert: foundDessert,
+            currentUser: req.session.currentUser
         })
     })
 })

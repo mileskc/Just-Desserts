@@ -9,6 +9,10 @@ h2, h6 {
     text-align: center;
 }
 
+h5 {
+    height: 50px;
+}
+
 h1 {
     color: white;
     font-size: 80px;
@@ -37,4 +41,8 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.card {
+    height: 500px;
 }
