@@ -27,6 +27,12 @@ img {
     margin: 0 auto;
     border: double gray 5px;
     border-radius: 10px;
+    width: 100%;
+}
+
+.carousel .carousel-item {
+    width: 25%;
+    height: 100%;
 }
 
 h2, h3 {
