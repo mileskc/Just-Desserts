@@ -1,22 +1,25 @@
 /* Header */
 
 header {
-    background-image: url('https://images.unsplash.com/photo-1516478379578-ea8bea43365f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    /* background-image: url('https://images.unsplash.com/photo-1516478379578-ea8bea43365f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); */
+    background-image: url('https://images.unsplash.com/photo-1543750318-20ba09bfa90b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80');
     background-size: 100%;
-    background-position: -2px -150px;
+    background-position: 0px -370px;
     height: 400px;
 }
 
 h1 {
-    padding: 20px;
+    padding: 10px;
     text-align: right;
     font-size: 80px;
     color: white;
+    margin-top: 0;
 }
 
 nav {
-    margin-top: 200px;
-    font-size: 20px;
+    margin-top: 228px;
+    /* background-color: rgba(153, 166, 192, .5); */
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7))
 }
 
 /* Main Content */

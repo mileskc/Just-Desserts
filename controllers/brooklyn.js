@@ -4,7 +4,7 @@ const Dessert = require('../models/desserts.js')
 
 //brooklyn index page
 router.get('/justdesserts/brooklyn', (req, res) => {
-    Dessert.find({}, (error, bkDesserts) => {
+    Dessert.find({ borough: { "$in" : ["Brooklyn"]} }, (error, bkDesserts) => {
         res.render('brooklyn/index.ejs', {
             desserts: bkDesserts
         })
