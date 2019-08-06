@@ -5,14 +5,21 @@ const Dessert = require('../models/desserts.js')
 //main page
 router.get('/justdesserts', (req, res) => {
     // res.send('main page')
-    res.render('index.ejs')
+    Dessert.find({}, (error, allDesserts) => {
+        res.render('desserts/index.ejs', {
+            desserts: allDesserts,
+            currentUser: req.session.currentUser
+        })
+    })
+    // res.render('index.ejs')
 })
 
 //dessert index page
 router.get('/justdesserts/alldesserts', (req, res) => {
     Dessert.find({}, (error, allDesserts) => {
         res.render('desserts/index.ejs', {
-            desserts: allDesserts
+            desserts: allDesserts,
+            currentUser: req.session.currentUser
         })
     })
 })
@@ -21,6 +28,7 @@ router.get('/justdesserts/alldesserts', (req, res) => {
 router.get('/justdesserts/alldesserts/new', (req, res) => {
     res.render('desserts/new.ejs')
 })
+
 
 //edit
 router.get('/justdesserts/alldesserts/:id/edit', (req, res) => {
@@ -35,7 +43,8 @@ router.get('/justdesserts/alldesserts/:id/edit', (req, res) => {
 router.get('/justdesserts/alldesserts/:id', (req, res) => {
     Dessert.findById(req.params.id, (error, foundDessert) => {
         res.render('desserts/show.ejs', {
-            dessert: foundDessert
+            dessert: foundDessert,
+            currentUser: req.session.currentUser
         })
     })
     // res.send('show')

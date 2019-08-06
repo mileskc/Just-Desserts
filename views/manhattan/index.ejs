@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Manhattan Dessert Spots</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel = "stylesheet" href = "../../css/manhattan/main.css">
@@ -28,12 +28,14 @@
                                         <h5 class="card-title"><a href = "manhattan/<%=desserts[i].id%>"><%=desserts[i].name%></a></h5>
                                     </div>
                                         <p class="card-text"></p>
+                                        <% if(currentUser) { %>
                                         <div class="card-action">
                                         <a href="alldesserts/<%=desserts[i].id%>/edit" class="btn btn-primary">Edit</a>
                                         <form action = "alldesserts/<%=desserts[i].id%>?_method=DELETE" method = "POST">
                                             <input type = "submit" value = "Delete" class="btn btn-primary">
                                         </form>
                                     </div>
+                                <% } %>
                                 </div>
                             </div>
                     </div>

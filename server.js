@@ -5,6 +5,7 @@ const express = require('express');
 const mongoose = require ('mongoose');
 const app = express();
 const methodOverride = require('method-override');
+const session = require('express-session');
 //___________________
 //Port
 //___________________
@@ -21,6 +22,11 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/JustDesserts
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'))
 app.use(methodOverride('_method'));
+app.use(session({
+  secret: "feedmeseymour", //some random string
+  resave: false,
+  saveUninitialized: false
+}));
 
 //Controllers
 const mainController = require('./controllers/main.js')
@@ -31,6 +37,10 @@ const qnsController = require('./controllers/queens.js')
 app.use('/', qnsController);
 const mtnController = require('./controllers/manhattan.js')
 app.use('/', mtnController);
+const usersController = require('./controllers/users.js');
+app.use('/', usersController);
+const sessionsController = require('./controllers/sessions.js');
+app.use('/', sessionsController);
 
 // Connect to Mongo
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
@@ -45,6 +55,13 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
 app.get('/' , (req, res) => {
   res.redirect('/justdesserts');
 });
+
+// //login
+// app.get('/justdesserts', (req, res)=>{
+//   res.render('views/index.ejs', {
+//       currentUser: req.session.currentUser
+//   });
+// });
 
 
 // seed data

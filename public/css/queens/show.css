@@ -29,13 +29,22 @@ img {
     border-radius: 10px;
 }
 
+.carousel .carousel-item {
+    width: 25%;
+    height: 50%;
+}
+
+h5 {
+    text-align: center;
+}
+
 h2, h3 {
     text-align: center;
 }
 
 h2 {
     font-size: 65px;
-    margin: 40px;
+    margin: 20px;
 }
 
 h3 {

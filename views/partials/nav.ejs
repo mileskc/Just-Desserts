@@ -18,5 +18,16 @@
             <li><a class="nav-item nav-link" href = "/justdesserts/queens">Queens</a></li>
             <li><a class="nav-item nav-link" href = "/justdesserts/manhattan">Manhattan</a></li>
           </ul>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+              <li><a href="/justdesserts/sessions/new">Log In</a></li>
+              <li><a href="/justdesserts/users/new">Register</a></li>
+              <% if(currentUser) { %>
+                <li>
+                    <form action="/justdesserts/sessions?_method=DELETE" method="POST">
+                        <input type="submit" value="Logout"/>
+                    </form>
+                </li>
+            <% } %>
+          </ul>
         </div>
       </nav>

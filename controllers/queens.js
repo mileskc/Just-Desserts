@@ -5,7 +5,8 @@ const Dessert = require('../models/desserts.js')
 router.get('/justdesserts/queens', (req, res) => {
     Dessert.find({borough: { "$in" : ["Queens"]}}, (error, qnsDesserts) => {
         res.render('queens/index.ejs', {
-            desserts: qnsDesserts
+            desserts: qnsDesserts,
+            currentUser: req.session.currentUser
         })
     })
 })
@@ -14,7 +15,8 @@ router.get('/justdesserts/queens', (req, res) => {
 router.get('/justdesserts/queens/:id', (req, res) => {
     Dessert.findById(req.params.id, (error, foundDessert) => {
         res.render('queens/show.ejs', {
-            dessert: foundDessert
+            dessert: foundDessert,
+            currentUser: req.session.currentUser
         })
     })
     // res.send('show')
