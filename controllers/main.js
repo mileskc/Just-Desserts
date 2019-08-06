@@ -6,7 +6,7 @@ const Dessert = require('../models/desserts.js')
 router.get('/justdesserts', (req, res) => {
     // res.send('main page')
     Dessert.find({}, (error, allDesserts) => {
-        res.render('desserts/index.ejs', {
+        res.render('index.ejs', {
             desserts: allDesserts,
             currentUser: req.session.currentUser
         })
