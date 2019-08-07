@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New Dessert</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel = "stylesheet" href = "/css/alldesserts/new.css">
 </head>
 <body>
@@ -19,52 +20,73 @@
             <div class="row">
             <form class="col s12" action = "/justdesserts/alldesserts" method = POST>
                 <div class="row">
-                <div class="input-field col s6">
-                <label for = "name">Name</label>
-                <input type = "text" name = "name" id = "name">
-                </div>
-            </div>
-            <div class="row">
                     <div class="input-field col s6">
-                <label for = "img">Img URL</label>
-                <input type = "text" name = "img" id = "img">
-            </div>
-        </div>
-        <div class="row">
-                <div class="input-field col s6">
-                <label for = "neighborhood">neighborhood</label>
-                <input type = "text" name = "neighborhood" id = "neighborhood">
-            </div>
-        </div>
-        <div class="row">
-                <div class="input-field col s6">
-                <label for = "borough">borough</label>
-                <input type = "text" name = "borough" id = "borough">
-            </div>
-        </div>
+                        <label for = "name">Name</label>
+                        <input type = "text" name = "name" id = "name">
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="input-field col s6">
+                        <label for = "img">Logo URL</label>
+                        <input type = "text" name = "img" id = "img">
+                    </div>
+                </div>
                 <div class="row">
-                        <div class="input-field col s6">
-                <label for = "addressBk">address</label>
-                <input type = "text" name = "addressBk" id = "addressBk">
-            </div>
-        </div>
+                    <div class="input-field col s6">
+                        <label for = "img">Img URL</label>
+                        <input type = "text" name = "img" id = "img">
+                    </div>
+                </div>
                 <div class="row">
-                        <div class="input-field col s6">
-                <label for = "description">Description</label>
-                <input name="description" id = "description" rows="10" cols="30">
-            </div>
-        </div>
+                    <div class="input-field col s6">
+                        <label for = "img">Img URL</label>
+                        <input type = "text" name = "img" id = "img">
+                    </div>
+                </div>
                 <div class="row">
-                        <div class="input-field col s6">
-                <label for = "rating">Rating</label>
-                <input type = "number" name = "rating" id = "rating">
-            </div>
-        </div>
+                    <div class="input-field col s6">
+                        <label for = "img">Img URL</label>
+                        <input type = "text" name = "img" id = "img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for = "neighborhood">neighborhood</label>
+                        <input type = "text" name = "neighborhood" id = "neighborhood">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for = "borough">borough</label>
+                        <input type = "text" name = "borough" id = "borough">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for = "addressBk">address</label>
+                        <input type = "text" name = "addressBk" id = "addressBk">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for = "description">Description</label>
+                        <input name="description" id = "description" rows="10" cols="30">
+                    </div>
+                </div>
                 <input class = "submit" type = "submit" value = "Submit Location">
             </form>    
             </div>
         </main>
     </div>    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+      <script>   
+      $(document).ready(function(){
+      $('.sidenav').sidenav();
+            });
+      </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
