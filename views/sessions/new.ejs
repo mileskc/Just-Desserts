@@ -3,13 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel = "stylesheet" href = "/css/alldesserts/new.css">
     </head>
     <body>
-        <h1>Sign In</h1>
-        <form action="/justdesserts/sessions" method="POST">
-            <input type="text" name="username" placeholder="username"/>
-            <input type="password" name="password" />
-            <input type="submit" value="Log In" />
+        <header>
+            <h1>Just Desserts</h1>
+            <% include ../partials/nav.ejs %>
+        </header>
+        <h2>Sign In</h2>
+        <div class="row">
+        <form class="col s12" action="/justdesserts/sessions" method="POST">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input type="text" name="username" placeholder="username"/>
+                </div>
+            </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input type="password" name="password" />
+            </div>
+        </div>
+            <input class = "submit" type="submit" value="Log In" />
         </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
 </html>
