@@ -8,6 +8,12 @@ header {
     background-attachment: fixed;
 }
 
+h2 {
+    margin: 40px;
+    font-size: 40px;
+    font-family: 'Josefin Slab', serif;
+}
+
 h2, h6 {
     text-align: center;
 }
@@ -23,6 +29,7 @@ h1 {
     padding: 10px;
     margin-top: 0;
     text-shadow: 4px 4px 10px rgb(0, 0, 0);
+    font-family: 'Fredericka the Great', cursive;
 }
 
 h4 {
@@ -42,6 +49,7 @@ nav {
 nav ul a{
     font-size: 1.5rem;
     text-shadow: 6px 6px 10px rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
 }
 
 .logout {
@@ -49,6 +57,8 @@ nav ul a{
     padding: 5px;
     color: white;
     font-size: 1.2rem;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
