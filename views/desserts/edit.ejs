@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel = "stylesheet" href= "../../css/alldesserts/edit.css">
 </head>
 <body>
     <header>
@@ -13,19 +15,54 @@
     </header>
         <main>
             <h2>Edit Item</h2>
-            <form action = "/justdesserts/alldesserts/<%=dessert.id%>?_method=PUT" method = POST>
-                <label for = "name">Name</label>
-                <input type = "text" name = "name" id = "name" value = "<%=dessert.name%>">
-                <label for = "img">Img URL</label>
-                <input type = "text" name = "img" id = "img" value = "<%=dessert.img%>">
-                <label for = "neighborhood">neighborhood</label>
-                <input type = "text" name = "neighborhood" id = "neighborhood" value = "<%=dessert.neighborhood%>">
-                <label for = "description">Description</label>
-                <textarea name="description" id = "description" value = "<%=dessert.description%>" rows="10" cols="30">Description here</textarea>
-                <label for = "rating">Rating</label>
-                <input type = "number" name = "rating" id = "rating" value = "<%=dessert.rating%>">
-                <input class = "submit" type = "submit" value = "Submit Product">
-            </form>    
+            <div class="row">
+            <form  class="col s12" action = "/justdesserts/alldesserts/<%=dessert.id%>?_method=PUT" method = POST>
+                <div class="row">
+                        <div class="input-field col s6">
+                        <label for = "name">Name</label>
+                        <input type = "text" name = "name" id = "name">
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="input-field col s6">
+                        <label for = "img">Img URL</label>
+                        <input type = "text" name = "img" id = "img">
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                        <label for = "neighborhood">neighborhood</label>
+                        <input type = "text" name = "neighborhood" id = "neighborhood">
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                        <label for = "borough">borough</label>
+                        <input type = "text" name = "borough" id = "borough">
+                    </div>
+                </div>
+                        <div class="row">
+                                <div class="input-field col s6">
+                        <label for = "addressBk">address</label>
+                        <input type = "text" name = "addressBk" id = "addressBk">
+                    </div>
+                </div>
+                        <div class="row">
+                                <div class="input-field col s6">
+                        <label for = "description">Description</label>
+                        <input name="description" id = "description" rows="10" cols="30">
+                    </div>
+                </div>
+                        <div class="row">
+                                <div class="input-field col s6">
+                        <label for = "rating">Rating</label>
+                        <input type = "number" name = "rating" id = "rating">
+                    </div>
+                </div>
+                        <input class = "submit" type = "submit" value = "Submit Location">
+            </form>  
+        </div>  
         </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
