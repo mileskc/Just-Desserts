@@ -72,7 +72,7 @@ let seedDesserts = [
         addressBk: ['513 Henry St, Brooklyn, NY 11231'],
         addressQns: [],
         addressMtn: [],
-        description: "Insane sundaes - make sure you have someone (or multiple someones) to share with!",
+        description: "Extravagant sundaes - make sure you have someone (or multiple someones) to share with!",
         type: 'ice cream'
     },
     {

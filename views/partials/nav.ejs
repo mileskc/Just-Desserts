@@ -1,16 +1,6 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(2, 2, 2, .1);">
-        <div class="navbar-nav">
-        <a class="nav-item nav-link" href = "/justdesserts">Home</a>
-        <a class="nav-item nav-link" href = "/justdesserts/alldesserts">All Locations</a>
-        <a class="nav-item nav-link" href = "/justdesserts/brooklyn">Brooklyn</a>
-        <a class="nav-item nav-link" href = "/justdesserts/queens">Queens</a>
-        <a class="nav-item nav-link" href = "/justdesserts/manhattan">Manhattan</a>
-        </div>
-</nav> -->
 
-    <nav>
+     <nav>
         <div class="nav-wrapper">
-          <!-- <a href="#" class="brand-logo right">Logo</a> -->
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li><a class="nav-item nav-link" href = "/justdesserts">Home</a></li>
@@ -20,10 +10,10 @@
             <li><a class="nav-item nav-link" href = "/justdesserts/manhattan">Manhattan</a></li>
           </ul>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-              <li><a href="/justdesserts/sessions/new">Log In</a></li>
+              <li><a class="nav-item nav-link" href="/justdesserts/sessions/new">Admin</a></li>
               <% if(currentUser) { %>
-                <li><a class = "create" href = "/justdesserts/alldesserts/new">Add Location</a></li>
-                <li><a href="/justdesserts/users/new">Register</a></li>
+                <li><a class = "nav-item nav-link create" href = "/justdesserts/alldesserts/new">Add Location</a></li>
+                <li><a class="nav-item nav-link" href="/justdesserts/users/new">Register</a></li>
                 <li>
                     <form action="/justdesserts/sessions?_method=DELETE" method="POST">
                         <input class = "logout" type="submit" value="Logout"/>
@@ -40,12 +30,10 @@
           <li><a class="nav-item nav-link" href = "/justdesserts/brooklyn">Brooklyn</a></li>
           <li><a class="nav-item nav-link" href = "/justdesserts/queens">Queens</a></li>
           <li><a class="nav-item nav-link" href = "/justdesserts/manhattan">Manhattan</a></li>
-        </ul>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="/justdesserts/sessions/new">Log In</a></li>
-            <% if(currentUser) { %>
-              <li><a class = "create" href = "/justdesserts/alldesserts/new">Add Location</a></li>
-              <li><a href="/justdesserts/users/new">Register</a></li>
+          <li><a class="nav-item nav-link" href="/justdesserts/sessions/new">Admin</a></li>
+          <% if(currentUser) { %>
+              <li><a class = "nav-item nav-link create" href = "/justdesserts/alldesserts/new">Add Location</a></li>
+              <li><a class="nav-item nav-link" href="/justdesserts/users/new">Register</a></li>
               <li>
                   <form action="/justdesserts/sessions?_method=DELETE" method="POST">
                       <input class = "logout" type="submit" value="Logout"/>

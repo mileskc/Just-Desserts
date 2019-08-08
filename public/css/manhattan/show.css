@@ -99,8 +99,34 @@ li {
     font-family: 'Roboto', sans-serif;
 }
 
+.list-group-item {
+    font-size: 18px;
+}
+
 form {
     margin-top: 12px;
+}
+
+.rectangle {
+    background-color: rgb(245, 239, 240);
+    width: 80%;
+    margin: 15px auto;
+    padding: 8px;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(240, 232, 220, .5);
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Media Query */
@@ -109,7 +135,7 @@ form {
     header {
         background-position-y: -50px;
     }
-    
+
     .carousel .carousel-item {
         width: 60%;
     }

@@ -72,6 +72,21 @@ img {
     box-shadow: 4px 4px 15px #a19e9e;
 }
 
+/* Footer */
+
+footer {
+    background-color: rgb(245, 239, 240);
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 /* Media Query */
 
