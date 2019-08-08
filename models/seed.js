@@ -12,13 +12,25 @@ let seedDesserts = [
     { 
         name: 'Birdbath',
         img: ['https://www.social-ink.net/wp-content/uploads/city-bakery_logo_socialInk.jpg', 'https://i.pinimg.com/originals/1f/91/4a/1f914ad7c013728214f062cd2999bba5.jpg', 'https://i.pinimg.com/originals/e5/b3/23/e5b3237ffb8c7cbd3a256f5689ae660f.jpg', 'http://thecitybakery.com/wp-content/uploads/2015/08/Birdbath_CB5_436x226.jpg'],
-        neighborhood: ['Soho, Midtown East'],
+        neighborhood: ['Soho', 'Midtown East'],
         borough: ['Manhattan'],
         addressBk: [],
         addressQns: [],
         addressMtn: ['160 Prince St, New York, NY 10012', '140 E 45th St, New York, NY 10017'],
         description: "Excellent cookies if you're looking for something less dense than Chip or Levain",
         type: 'cookies'
+    },
+    {
+        name: 'Breads',
+        img: ['https://s3-media4.fl.yelpcdn.com/bphoto/mDaSWYX8hEV0eNGXJSDhVg/ls.jpg', 'https://www.seriouseats.com/images/2015/04/20150115-breads-bakery-babka-pie-whole-best-babka-in-NYC-niko-triantafillou.jpg', 'https://img.goldbelly.com/uploads/product_image/image/45715/breads-bakery-chocolate-babka-3-pack.a864c08a02b28fab833966198db45acb.jpg?ixlib=rails-3.0.2&w=820&h=820', 'https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/126369.jpg'],
+        neighborhood: ['Midtown', 'Union Square', 'Lincoln Center'],
+        borough: ['Manhattan'],
+        addressBk: [],
+        addressQns: [],
+        addressMtn: ['1090 6th Ave, ​New York​, NY​ 10036​', '18 E 16th St, New York, NY 10003', '1890 Broadway, New York, NY 10023'],
+        description: "The (chocolate) babka.",
+        type: 'babka'
+
     },
     { 
         name: 'Chip',
@@ -50,7 +62,7 @@ let seedDesserts = [
         addressBk: ['448 Lafayette Ave (at Franklin Ave) Brooklyn, NY 11205'],
         addressQns: [],
         addressMtn: ['14 W 19th St (at 5th Ave), New York, NY 10011', '230 Park Avenue (at 45th St) New York, NY 10169', '700 8th Ave (at 44th St), New York, NY 10036'],
-        description: 'Dense donuts with strong flavors',
+        description: 'Dense donuts with strong flavors - The salted chocolate caramel is a classic.',
         type: 'doughnuts'
     },
     { 
@@ -94,7 +106,7 @@ let seedDesserts = [
         addressBk: [],
         addressQns: [],
         addressMtn: ['167 West 74th St, New York, NY 10023', '351 Amsterdam Avenue New York, NY 10024', '2167 Frederick Douglass Blvd. New York, NY 10026', '1484 Third Avenue New York, NY 10028'],
-        description: 'Second best cookies in NYC',
+        description: 'Second best cookies in NYC (after Chip, of course)',
         type: 'cookies'
 
     },
@@ -120,9 +132,17 @@ let seedDesserts = [
         description: "Extensive ice cream and topping selection",
         type: 'ice cream'
     },
-    // {
-    //     name: 'Momofuku Milkbar'
-    // },
+    {
+        name: 'Schmackary\'s',
+        img: ['https://www.nyemmys.org/files/706/', 'http://www.chekmarkeats.com/wp-content/uploads/2014/04/Image-2-600x400.jpg', 'https://bartonsbites.files.wordpress.com/2013/10/schmackarys-window-display.jpg', 'https://cdn.newsday.com/polopoly_fs/1.31074727.1558018625!/httpImage/image.jpg_gen/derivatives/landscape_768/image.jpg'],
+        neighborhood: ['Midtown West, NoHo'],
+        borough: ['Manhattan'],
+        addressBk: [],
+        addressQns: [],
+        addressMtn: ['362 West 45th Street, New York, New York 10036', '35 Cooper Square, New York, New York 10036'],
+        description: "Mostly frosted cookies with a wide range of fun flavors - an after-show staple in the theater community. You can often find Broadway actors stepping in behind the counter!",
+        type: 'ice cream'
+    },
     {
         name: 'Two Little Red Hens',
         img: ['http://castlesandcooks.com/wp-content/uploads/2013/05/TwoLittleRedHens.png', 'http://3.bp.blogspot.com/-rImYVHZZlZg/UkjElupBPVI/AAAAAAAAApU/DiNZlhXdb_A/s1600/IMG_2991.JPG', 'https://static1.squarespace.com/static/5c282addc3c16a3f1c3d8855/5c28303c1ae6cf9b88409260/5c2849edaa4a995f08a519ff/1552150906823/two-little-red-hens_13130263644_o.jpg?format=2500w', 'http://dessertbuzz.com/wp-content/uploads/2012/02/Two-red-hens-3.jpg'],
