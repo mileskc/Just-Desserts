@@ -10,7 +10,7 @@ The first objective in building this site was to get full CRUD (Create, Read, Up
 
 # Site Photos
 
-![Site Screenshot 1](https://github.com/mileskc/mileskc.github.io/blob/master/ScoreCast/ScoreCast%20Page%20Screenshot%20(Modal).png)
+![Site Screenshot 1](https://github.com/mileskc/Just-Desserts/blob/master/images/All%20Desserts%20Screenshot.png)
 
 # Link to site
 
