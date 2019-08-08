@@ -10,8 +10,7 @@ The first objective in building this site was to get full CRUD (Create, Read, Up
 
 # Site Photos
 
-![Site Screenshot 1]
-(https://github.com/mileskc/Just-Desserts/blob/master/images/All%20Desserts%20Screenshot.png)
+![Site Screenshot 1](https://github.com/mileskc/Just-Desserts/blob/master/images/All%20Desserts%20Screenshot.png)
 
 # Link to site
 
