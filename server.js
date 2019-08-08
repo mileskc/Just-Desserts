@@ -56,14 +56,6 @@ app.get('/' , (req, res) => {
   res.redirect('/justdesserts');
 });
 
-// //login
-// app.get('/justdesserts', (req, res)=>{
-//   res.render('views/index.ejs', {
-//       currentUser: req.session.currentUser
-//   });
-// });
-
-
 // seed data
 // const seed = require('./models/seed.js');
 // const Dessert = require('./models/desserts.js');

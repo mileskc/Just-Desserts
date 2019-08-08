@@ -11,10 +11,8 @@ const dessertSchema = Schema( {
     addressQns: [String],
     addressMtn: [String],
     description: String,
-    rating: Number,
     type: String
 })
-
 
 const Dessert = mongoose.model('Dessert', dessertSchema);
 
