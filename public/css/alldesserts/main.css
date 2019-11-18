@@ -73,6 +73,13 @@ nav ul a{
 
 img {
     height: 220px;
+    border-bottom: 1px solid gray;
+}
+
+.name-link {
+    color:rgb(48, 48, 100);
+    font-size: 30px;
+    font-family: 'Josefin Slab', serif;
 }
 
 .card-action {
@@ -85,6 +92,10 @@ img {
     height: 430px;
     border: double rgb(192, 191, 191) 5px;
     box-shadow: 4px 4px 15px #a19e9e;
+}
+
+.btn.btn-primary {
+    background-color: rgb(48, 48, 100);
 }
 
 /* Footer */

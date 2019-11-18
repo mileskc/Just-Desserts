@@ -82,6 +82,16 @@ img {
     box-shadow: 4px 4px 15px #a19e9e;
 }
 
+.name-link {
+    color:rgb(48, 48, 100);
+    font-size: 30px;
+    font-family: 'Josefin Slab', serif;
+}
+
+.btn.btn-primary {
+    background-color: rgb(48, 48, 100);
+}
+
 /* Footer */
 
 footer {
