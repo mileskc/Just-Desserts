@@ -56,7 +56,7 @@ let seedDesserts = [
     },
     { 
         name: 'Dough',
-        img: ['https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/10383586_846693845394065_8467373276703890711_n.jpg?_nc_cat=101&_nc_oc=AQnIazEm2k-OK4baoCFUqVM1jK5zC4YaA5DpMruj5CqJL0_5zT97lC14AMiMsF9wTok&_nc_ht=scontent-lga3-1.xx&oh=3475bfa5d75c269c28f89d1800f162b1&oe=5DA61144', 'http://s3.amazonaws.com/trycaviar.com/offers/6279/287790-201706191420.jpg', 'http://www.cityguideny.com/columnpic/ndLead%20Image%20-%20Dough.jpg', 'https://images.getbento.com/accounts/a28dc4cd5a54613bcf0768489248ab80/media/images/79696DOUGH_515_0931.jpg?w=860&fit=crop&auto=compress,format&h=573'],
+        img: ['https://getbento.imgix.net/accounts/f841b6dc90bc11473ab0a05120ca073b/media/images/dplogo-white.png'],
         neighborhood: ['Bed Stuy', 'Flatiron', 'Midtown East', 'Midtown West'],
         borough: ['Brooklyn', 'Manhattan'],
         addressBk: ['448 Lafayette Ave (at Franklin Ave) Brooklyn, NY 11205'],
@@ -100,7 +100,7 @@ let seedDesserts = [
     },
     { 
         name: 'Levain',
-        img: ['https://www.stripesgroup.com/system/uploads/investment/logo_image/49/logo.gif', 'https://www.modernhoney.com/wp-content/uploads/2016/07/IMG_8253.jpg', 'https://cdn.vox-cdn.com/thumbor/XhS8Z20vgkGN35iow_eVt23Is-M=/0x0:960x720/1200x800/filters:focal(404x284:556x436)/cdn.vox-cdn.com/uploads/chorus_image/image/63263389/12832534_10154005328284530_2573137778309631672_n.0.jpg', 'https://i2.wp.com/www.kaiandthekitchen.com/wp-content/uploads/2018/10/levain-cookies-3.jpg?resize=1024%2C617&ssl=1'],
+        img: ['https://media.glassdoor.com/sqll/1068327/levain-bakery-squarelogo-1545377807009.png'],
         neighborhood: ['Upper West Side', 'Harlem'],
         borough: ['Manhattan'],
         addressBk: [],

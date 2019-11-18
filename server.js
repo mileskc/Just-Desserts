@@ -56,7 +56,7 @@ app.get('/' , (req, res) => {
   res.redirect('/justdesserts');
 });
 
-// seed data
+// // seed data
 // const seed = require('./models/seed.js');
 // const Dessert = require('./models/desserts.js');
 // app.get('/justdesserts/seedDesserts', (req, res) => {
