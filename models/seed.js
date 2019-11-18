@@ -56,7 +56,7 @@ let seedDesserts = [
     },
     { 
         name: 'Dough',
-        img: ['https://getbento.imgix.net/accounts/f841b6dc90bc11473ab0a05120ca073b/media/images/dplogo-white.png'],
+        img: ['https://pbs.twimg.com/profile_banners/274018167/1399475959/1500x500'],
         neighborhood: ['Bed Stuy', 'Flatiron', 'Midtown East', 'Midtown West'],
         borough: ['Brooklyn', 'Manhattan'],
         addressBk: ['448 Lafayette Ave (at Franklin Ave) Brooklyn, NY 11205'],
