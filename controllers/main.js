@@ -4,14 +4,12 @@ const Dessert = require('../models/desserts.js')
 
 //main page
 router.get('/justdesserts', (req, res) => {
-    // res.send('main page')
     Dessert.find({}, (error, allDesserts) => {
         res.render('index.ejs', {
             desserts: allDesserts,
             currentUser: req.session.currentUser
         })
     })
-    // res.render('index.ejs')
 })
 
 //dessert index page
@@ -50,13 +48,11 @@ router.get('/justdesserts/alldesserts/:id', (req, res) => {
             currentUser: req.session.currentUser
         })
     })
-    // res.send('show')
 })
 
 //Create
 router.post('/justdesserts/alldesserts', (req, res) => {
     Dessert.create(req.body, (err, createdUser)=>{
-        console.log(req.body.rating)
         res.redirect('/justdesserts/alldesserts');
     });
 })
@@ -75,11 +71,6 @@ router.put('/justdesserts/alldesserts/:id', (req, res) => {
     })
 })
 
-
-
-// app.get('justdesserts/alldesserts/:id', (req, res) => {
-//     res.send('show pages')
-// })
 
 // EXPORT
 module.exports = router;

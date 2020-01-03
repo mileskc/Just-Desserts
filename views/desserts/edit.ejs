@@ -1,93 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edit Dessert</title>
-    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab|Roboto:300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel ="stylesheet" href = "/css/alldesserts/edit.css">
-</head>
-<body>
-    <header>
-        <h1>Just Desserts</h1>
-        <% include ../partials/nav.ejs %>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Edit Dessert</title>
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab|Roboto:300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel ="stylesheet" href = "/css/alldesserts/edit.css">
+    </head>
+    <body>
+        <header>
+            <h1>Just Desserts</h1>
+            <% include ../partials/nav.ejs %>
+        </header>
         <main>
             <h2>Edit Location</h2>
             <div class="row">
-            <form  class="col s12" action = "/justdesserts/alldesserts/<%=dessert.id%>?_method=PUT" method = POST>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <label for = "name">Name</label>
-                        <input type = "text" name = "name" id = "name">
+                <form  class="col s12" action = "/justdesserts/alldesserts/<%=dessert.id%>?_method=PUT" method = POST>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for = "name">Name</label>
+                            <input type = "text" name = "name" id = "name">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <label for = "img">Logo URL</label>
-                        <input type = "text" name = "img" id = "img">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for = "img">Logo URL</label>
+                            <input type = "text" name = "img" id = "img">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <label for = "img">Img URL</label>
-                        <input type = "text" name = "img" id = "img">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for = "img">Img URL</label>
+                            <input type = "text" name = "img" id = "img">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <label for = "img">Img URL</label>
-                        <input type = "text" name = "img" id = "img">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for = "img">Img URL</label>
+                            <input type = "text" name = "img" id = "img">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <label for = "img">Img URL</label>
-                        <input type = "text" name = "img" id = "img">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for = "img">Img URL</label>
+                            <input type = "text" name = "img" id = "img">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <label for = "neighborhood">neighborhood</label>
-                        <input type = "text" name = "neighborhood" id = "neighborhood">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for = "neighborhood">neighborhood</label>
+                            <input type = "text" name = "neighborhood" id = "neighborhood">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <label for = "borough">borough</label>
-                        <input type = "text" name = "borough" id = "borough">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for = "borough">borough</label>
+                            <input type = "text" name = "borough" id = "borough">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <label for = "addressBk">address</label>
-                        <input type = "text" name = "addressBk" id = "addressBk">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for = "addressBk">address</label>
+                            <input type = "text" name = "addressBk" id = "addressBk">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <label for = "description">Description</label>
-                        <input name="description" id = "description" rows="10" cols="30">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for = "description">Description</label>
+                            <input name="description" id = "description" rows="10" cols="30">
+                        </div>
                     </div>
-                </div>
-                <input class = "submit" type = "submit" value = "Update Location">
-            </form>  
+                    <input class = "submit" type = "submit" value = "Update Location">
+                </form>  
             </div>  
         </main>
         <% include ../partials/footer.ejs %>
-        
+            
         <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
-          <script>   
-          $(document).ready(function(){
-          $('.sidenav').sidenav();
-                });
-          </script>
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script>   
+            $(document).ready(function(){
+            $('.sidenav').sidenav();
+                    });
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
+    </body>
 </html>

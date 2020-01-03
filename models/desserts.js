@@ -17,7 +17,3 @@ const dessertSchema = Schema( {
 const Dessert = mongoose.model('Dessert', dessertSchema);
 
 module.exports = Dessert;
-
-
-//add page for each borough
-//in loop, call key value pair for respective borough

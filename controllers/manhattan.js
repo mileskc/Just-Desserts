@@ -20,7 +20,6 @@ router.get('/justdesserts/manhattan/:id', (req, res) => {
             currentUser: req.session.currentUser
         })
     })
-    // res.send('show')
 })
 
 module.exports = router;

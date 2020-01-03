@@ -34,7 +34,7 @@ let seedDesserts = [
     },
     { 
         name: 'Chip',
-        img: ['https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/30624264_510984309304242_3320912985091462698_n.jpg?_nc_cat=105&_nc_oc=AQmxm8bzk7C3uvMuU7vl0a3j6a482fnuNv54PotDRkN1FnvuTT-i7-wDuwWNd3rsaxs&_nc_ht=scontent-lga3-1.xx&oh=b64164ff5fd422d1acb5f28e30ced9b9&oe=5DDE6CEB', 'https://i.imgur.com/6szzxuF.png', 'https://i.imgur.com/40TvGJH.png', 'https://i.imgur.com/nCmdizX.png'],
+        img: ['https://i.imgur.com/7BkvJ46.jpg', 'https://i.imgur.com/6szzxuF.png', 'https://i.imgur.com/40TvGJH.png', 'https://i.imgur.com/nCmdizX.png'],
         neighborhood: ['Astoria', 'Long Island City'],
         borough: ['Queens'],
         addressBk: [],
@@ -56,7 +56,7 @@ let seedDesserts = [
     },
     { 
         name: 'Dough',
-        img: ['https://pbs.twimg.com/profile_banners/274018167/1399475959/1500x500'],
+        img: ['https://i.imgur.com/Af9Epcx.jpg', 'https://i.imgur.com/0Dfebus.jpg', 'https://i.imgur.com/jAlGOhY.jpg', 'https://i.imgur.com/jNM2kBY.jpg'],
         neighborhood: ['Bed Stuy', 'Flatiron', 'Midtown East', 'Midtown West'],
         borough: ['Brooklyn', 'Manhattan'],
         addressBk: ['448 Lafayette Ave (at Franklin Ave) Brooklyn, NY 11205'],
@@ -78,7 +78,7 @@ let seedDesserts = [
     },
     { 
         name: 'Farmacy',
-        img: ['https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/53145688_2370849732949543_6116083109390712832_n.jpg?_nc_cat=107&_nc_oc=AQk4JV3iuOv1zjDO3MIw3ue1ld2hy2lDxm1c-GeOX5nBQpOBwBhTvkyPD8Xwff18W0A&_nc_ht=scontent-lga3-1.xx&oh=4742ac0163026c6c4da036fbe6ac7ba8&oe=5DD41745', 'https://i.imgur.com/hws2SSP.png', 'https://i.imgur.com/WBUvUn3.png', 'https://i.imgur.com/7Vllkhc.png'],
+        img: ['https://i.imgur.com/p6bahW9.jpg', 'https://i.imgur.com/hws2SSP.png', 'https://i.imgur.com/WBUvUn3.png', 'https://i.imgur.com/7Vllkhc.png'],
         neighborhood: ['Carroll Gardens'],
         borough: ['Brooklyn'],
         addressBk: ['513 Henry St, Brooklyn, NY 11231'],
@@ -100,7 +100,7 @@ let seedDesserts = [
     },
     { 
         name: 'Levain',
-        img: ['https://media.glassdoor.com/sqll/1068327/levain-bakery-squarelogo-1545377807009.png'],
+        img: ['https://i.imgur.com/zjBFpcG.jpg', 'https://i.imgur.com/gPJKwV9.jpg', 'https://i.imgur.com/pznLk7W.jpg', 'https://i.imgur.com/0RhWTbA.jpg'],
         neighborhood: ['Upper West Side', 'Harlem'],
         borough: ['Manhattan'],
         addressBk: [],
@@ -134,7 +134,7 @@ let seedDesserts = [
     },
     {
         name: 'Schmackary\'s',
-        img: ['https://www.nyemmys.org/files/706/', 'http://www.chekmarkeats.com/wp-content/uploads/2014/04/Image-2-600x400.jpg', 'https://bartonsbites.files.wordpress.com/2013/10/schmackarys-window-display.jpg', 'https://cdn.newsday.com/polopoly_fs/1.31074727.1558018625!/httpImage/image.jpg_gen/derivatives/landscape_768/image.jpg'],
+        img: ['https://www.nyemmys.org/files/706/', 'http://www.chekmarkeats.com/wp-content/uploads/2014/04/Image-2-600x400.jpg', 'https://cdn.newsday.com/polopoly_fs/1.31074727.1558018625!/httpImage/image.jpg_gen/derivatives/landscape_768/image.jpg', 'https://i.imgur.com/tzRuUXi.jpg'],
         neighborhood: ['Midtown West, NoHo'],
         borough: ['Manhattan'],
         addressBk: [],

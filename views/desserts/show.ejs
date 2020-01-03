@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel = "stylesheet" href = "../../css/alldesserts/show.css">
 </head>
-    <body>
-        <header>
-            <h1>Just Desserts</h1>
-            <% include ../partials/nav.ejs %>
-        </header>
+<body>
+    <header>
+        <h1>Just Desserts</h1>
+        <% include ../partials/nav.ejs %>
+    </header>
     <main>
         <div class = "rectangle">
-            <h2><%=dessert.name%></h2>
+        <h2><%=dessert.name%></h2>
         
 <!-- Image Carousel -->
         
@@ -61,25 +61,26 @@
                 </ul>
             <% } %>
         <% } %>
-    </div>
-</main>
+        </div>
+    </main>
     <% include ../partials/footer.ejs %>
       
-        <script
+    <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
-          <script>   
-          $(document).ready(function(){
-          $('.sidenav').sidenav();
-                });
-          </script>
-        <script>  
-                document.addEventListener('DOMContentLoaded', function() {
-                let elems = document.querySelectorAll('.carousel');
-                let instances = M.Carousel.init(elems, {fullWidth: false, indicators: false});
-              });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        crossorigin="anonymous">
+    </script>
+    <script>   
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+    </script>
+    <script>  
+        document.addEventListener('DOMContentLoaded', function() {
+            let elems = document.querySelectorAll('.carousel');
+            let instances = M.Carousel.init(elems, {fullWidth: false, indicators: false});
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

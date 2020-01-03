@@ -11,13 +11,13 @@
     <link rel = "stylesheet" href = "/css/alldesserts/new.css">
 </head>
 <body>
-        <header>
-            <h1>Just Desserts</h1>
-            <% include ../partials/nav.ejs %>
-        </header>
-        <main>
-            <h2>Create New</h2>
-            <div class="row">
+    <header>
+        <h1>Just Desserts</h1>
+        <% include ../partials/nav.ejs %>
+    </header>
+    <main>
+        <h2>Create New</h2>
+        <div class="row">
             <form class="col s12" action = "/justdesserts/alldesserts" method = POST>
                 <div class="row">
                     <div class="input-field col s6">
@@ -75,19 +75,20 @@
                 </div>
                 <input class = "submit" type = "submit" value = "Submit Location">
             </form>    
-            </div>
-        </main>  
+        </div>
+    </main>  
     <% include ../partials/footer.ejs %>
 
     <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-      <script>   
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script>   
       $(document).ready(function(){
-      $('.sidenav').sidenav();
-            });
-      </script>
+        $('.sidenav').sidenav();
+      });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

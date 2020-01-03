@@ -11,7 +11,6 @@ body {
 header {
     background-image: url('https://images.unsplash.com/photo-1520352823777-923f7151a680?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
     height: 400px;
-    /* background-position: 0px -370px; */
     background-position-x: center;
     background-position-y: -370px;
     background-size: cover;
@@ -45,9 +44,7 @@ h2 {
 nav {
     position: absolute;
     bottom: 0;
-    /* margin-top: 228px; */
     font-size: 20px;
-    /* background-color: rgb(153, 166, 192); */
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7))
 }
 

@@ -12,13 +12,6 @@ router.get('/justdesserts/brooklyn', (req, res) => {
     })
 })
 
-// //login
-// router.get('/justdesserts/brooklyn', (req, res)=>{
-//     res.render('brooklyn/index.ejs', {
-//         currentUser: req.session.currentUser
-//     });
-// });
-
 //bk show route
 router.get('/justdesserts/brooklyn/:id', (req, res) => {
     Dessert.findById(req.params.id, (error, foundDessert) => {
@@ -27,7 +20,6 @@ router.get('/justdesserts/brooklyn/:id', (req, res) => {
             currentUser: req.session.currentUser
         })
     })
-    // res.send('show')
 })
 
 module.exports = router;

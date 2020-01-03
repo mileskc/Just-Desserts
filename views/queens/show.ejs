@@ -10,54 +10,52 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel = "stylesheet" href = "../../css/queens/show.css">
 </head>
-  <body>
-    <header>
-        <h1>Just Desserts</h1>
-        <% include ../partials/nav.ejs %>
-    </header>
-    <main>
-
+<body>
+  <header>
+    <h1>Just Desserts</h1>
+    <% include ../partials/nav.ejs %>
+  </header>
+  <main>
     <div class = "rectangle">
-    <h2><%=dessert.name%></h2>
+      <h2><%=dessert.name%></h2>
 
 <!-- Image Carousel -->
 
-    <div class="carousel">
-      <a class="carousel-item" href="#one!"><img src="<%=dessert.img[1]%>"></a>
-      <a class="carousel-item" href="#two!"><img src="<%=dessert.img[2]%>"></a>
-      <a class="carousel-item" href="#three!"><img src="<%=dessert.img[3]%>"></a>
-    </div>
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="<%=dessert.img[1]%>"></a>
+        <a class="carousel-item" href="#two!"><img src="<%=dessert.img[2]%>"></a>
+        <a class="carousel-item" href="#three!"><img src="<%=dessert.img[3]%>"></a>
+      </div>
 
     
-    <div class = "description">
-      <h5><%=dessert.description%></h5>
+      <div class = "description">
+        <h5><%=dessert.description%></h5>
+      </div>
+      <h3>Queens Locations</h3>
+      <ul class="list-group list-group-flush">
+          <% for ( let i = 0; i < dessert.addressQns.length; i++) { %>
+              <li class="list-group-item"><%=dessert.addressQns[i]%></li>
+          <% } %>
+      </ul>
     </div>
-    <h3>Queens Locations</h3>
-    <ul class="list-group list-group-flush">
-        <% for ( let i = 0; i < dessert.addressQns.length; i++) { %>
-            <li class="list-group-item"><%=dessert.addressQns[i]%></li>
-        <% } %>
-    </ul>
-  </div>
-</main>
+  </main>
   <% include ../partials/footer.ejs %>
-
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-    </script>
-    <script>   
-        $(document).ready(function(){
-        $('.sidenav').sidenav();
-        });
-    </script>
-    <script>  
-        document.addEventListener('DOMContentLoaded', function() {
-        let elems = document.querySelectorAll('.carousel');
-        let instances = M.Carousel.init(elems, {fullWidth: false, indicators: false});
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
+  <script>   
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+  <script>  
+    document.addEventListener('DOMContentLoaded', function() {
+      let elems = document.querySelectorAll('.carousel');
+      let instances = M.Carousel.init(elems, {fullWidth: false, indicators: false});
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
 </html>
