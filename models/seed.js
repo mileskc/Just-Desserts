@@ -134,7 +134,7 @@ let seedDesserts = [
     },
     {
         name: 'Schmackary\'s',
-        img: ['https://www.nyemmys.org/files/706/', 'http://www.chekmarkeats.com/wp-content/uploads/2014/04/Image-2-600x400.jpg', 'https://cdn.newsday.com/polopoly_fs/1.31074727.1558018625!/httpImage/image.jpg_gen/derivatives/landscape_768/image.jpg', 'https://i.imgur.com/tzRuUXi.jpg'],
+        img: ['https://i.imgur.com/J06gRzt.jpg', 'http://www.chekmarkeats.com/wp-content/uploads/2014/04/Image-2-600x400.jpg', 'https://cdn.newsday.com/polopoly_fs/1.31074727.1558018625!/httpImage/image.jpg_gen/derivatives/landscape_768/image.jpg', 'https://i.imgur.com/tzRuUXi.jpg'],
         neighborhood: ['Midtown West, NoHo'],
         borough: ['Manhattan'],
         addressBk: [],
