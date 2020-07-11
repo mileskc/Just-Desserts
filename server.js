@@ -2,7 +2,7 @@
 //Dependencies
 //___________________
 const express = require('express');
-const mongoose = require ('mongoose');
+const mongoose = require('mongoose');
 const app = express();
 const methodOverride = require('method-override');
 const session = require('express-session');
@@ -44,7 +44,7 @@ app.use('/', sessionsController);
 
 // Connect to Mongo
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
-	console.log('connected to mongo database')
+  console.log('connected to mongo database')
 });
 
 
@@ -52,21 +52,21 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
 // Routes
 //___________________
 
-app.get('/' , (req, res) => {
+app.get('/', (req, res) => {
   res.redirect('/justdesserts');
 });
 
 // // seed data
-// const seed = require('./models/seed.js');
-// const Dessert = require('./models/desserts.js');
-// app.get('/justdesserts/seedDesserts', (req, res) => {
-//   Dessert.insertMany(seed, (err, createdDesserts) => {
-//     // logs created users
-//     console.log(createdDesserts);
-//     // redirects to index
-//     res.redirect('/justdesserts/alldesserts');
-//   });
-// });
+const seed = require('./models/seed.js');
+const Dessert = require('./models/desserts.js');
+app.get('/justdesserts/seedDesserts', (req, res) => {
+  Dessert.insertMany(seed, (err, createdDesserts) => {
+    // logs created users
+    console.log(createdDesserts);
+    // redirects to index
+    res.redirect('/justdesserts/alldesserts');
+  });
+});
 //___________________
 //Listener
 //___________________

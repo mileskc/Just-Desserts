@@ -1,7 +1,8 @@
 let seedDesserts = [
-    {   name: 'Ample Hills', 
-        img: ['https://pbs.twimg.com/profile_images/1039584901140553729/2vMonpOI_400x400.jpg','http://s3.amazonaws.com/trycaviar.com/offers/4419/181105-201611142125.jpg', 'https://imgs.6sqft.com/wp-content/uploads/2018/11/06151538/MySqFt_AmpleHills-0275.jpg', 'https://images-na.ssl-images-amazon.com/images/I/81WwWvkYuDL._SL1500_.jpg'] , 
-        neighborhood: ['Gowanus', 'Red Hook', 'Downtown Brooklyn', 'Midtown West', 'Prospect Heights', 'Brooklyn Heights', 'West Village', 'Astoria', 'Chelsea'], 
+    {
+        name: 'Ample Hills',
+        img: ['https://i.imgur.com/5CCa340.png', 'http://s3.amazonaws.com/trycaviar.com/offers/4419/181105-201611142125.jpg', 'https://imgs.6sqft.com/wp-content/uploads/2018/11/06151538/MySqFt_AmpleHills-0275.jpg', 'https://images-na.ssl-images-amazon.com/images/I/81WwWvkYuDL._SL1500_.jpg'],
+        neighborhood: ['Gowanus', 'Red Hook', 'Downtown Brooklyn', 'Midtown West', 'Prospect Heights', 'Brooklyn Heights', 'West Village', 'Astoria', 'Chelsea'],
         borough: ['Brooklyn', 'Manhattan', 'Queens'],
         addressBk: ['305 Nevins St., Brooklyn, NY 11215', '421 Van Brunt St, Brooklyn, NY 11231', '445 Albee Square West, Brooklyn, NY 11201', '623 Vanderbilt Ave., Brooklyn, NY 11238', 'Pier 5, Brooklyn, NY 11201'],
         addressQns: ['34-02 30th Ave, Astoria, NY 11103'],
@@ -9,7 +10,7 @@ let seedDesserts = [
         description: 'Known for their Ooey Gooey Buttercake and Munchies flavors - Fun fact: The store is named after a Walt Whitman quote',
         type: 'ice cream'
     },
-    { 
+    {
         name: 'Birdbath',
         img: ['https://www.social-ink.net/wp-content/uploads/city-bakery_logo_socialInk.jpg', 'https://i.pinimg.com/originals/1f/91/4a/1f914ad7c013728214f062cd2999bba5.jpg', 'https://i.pinimg.com/originals/e5/b3/23/e5b3237ffb8c7cbd3a256f5689ae660f.jpg', 'http://thecitybakery.com/wp-content/uploads/2015/08/Birdbath_CB5_436x226.jpg'],
         neighborhood: ['Soho', 'Midtown East'],
@@ -32,7 +33,7 @@ let seedDesserts = [
         type: 'babka'
 
     },
-    { 
+    {
         name: 'Chip',
         img: ['https://i.imgur.com/7BkvJ46.jpg', 'https://i.imgur.com/6szzxuF.png', 'https://i.imgur.com/40TvGJH.png', 'https://i.imgur.com/nCmdizX.png'],
         neighborhood: ['Astoria', 'Long Island City'],
@@ -41,7 +42,7 @@ let seedDesserts = [
         addressQns: ["30-06 34th St., Astoria, NY 11103", "42-15 Crescent St, Long Island City, NY 11101", "22-04 33rd St,Astoria, NY 11105"],
         addressMtn: [],
         description: 'Best cookies in NYC',
-        type: 'cookies' 
+        type: 'cookies'
     },
     {
         name: 'The Chocolate Room',
@@ -54,7 +55,7 @@ let seedDesserts = [
         description: "All the chocolate you could ever want in one place",
         type: 'chocolate'
     },
-    { 
+    {
         name: 'Dough',
         img: ['https://i.imgur.com/Af9Epcx.jpg', 'https://i.imgur.com/0Dfebus.jpg', 'https://i.imgur.com/jAlGOhY.jpg', 'https://i.imgur.com/jNM2kBY.jpg'],
         neighborhood: ['Bed Stuy', 'Flatiron', 'Midtown East', 'Midtown West'],
@@ -65,18 +66,18 @@ let seedDesserts = [
         description: 'Dense donuts with strong flavors - The salted chocolate caramel is a classic.',
         type: 'doughnuts'
     },
-    { 
-        name: 'Doughnut Plant', 
-        img: ['https://www.grandcentralterminal.com/wp-content/uploads/2018/06/DoughnutPlant_Logo-1-170x170.png','https://raster-static.postmates.com/?url=com.postmates.img.prod.s3.amazonaws.com/539406cc-500c-49f4-970c-eed38cfa5815/orig.jpg&quality=90&w=1500&h=900&mode=crop&format=jpg&v=4', 'https://www.metro.us/sites/default/files/main/articles/2017/05/19/rose-donuts-doughnut-plant.jpg', 'https://hoodline.imgix.net/uploads/story/image/101267/Doughnut_Plant.jpg?auto=format'], 
-        neighborhood: ['Chelsea', 'Midtown East', 'Lower East Side', 'Prospect Heights', 'Long Island City'], 
+    {
+        name: 'Doughnut Plant',
+        img: ['https://www.grandcentralterminal.com/wp-content/uploads/2018/06/DoughnutPlant_Logo-1-170x170.png', 'https://raster-static.postmates.com/?url=com.postmates.img.prod.s3.amazonaws.com/539406cc-500c-49f4-970c-eed38cfa5815/orig.jpg&quality=90&w=1500&h=900&mode=crop&format=jpg&v=4', 'https://i.imgur.com/Qr9lGCw.png', 'https://hoodline.imgix.net/uploads/story/image/101267/Doughnut_Plant.jpg?auto=format'],
+        neighborhood: ['Chelsea', 'Midtown East', 'Lower East Side', 'Prospect Heights', 'Long Island City'],
         borough: ['Manhattan', 'Brooklyn', 'Queens'],
         addressBk: ['245 Flatbush Avenue, Brooklyn, NY 11217'],
         addressQns: ['3100 47th Avenue, Long Island City, NY 11101'],
         addressMtn: ['89 East 42nd Street, New York, NY 10017', '379 Grand Street, New York, NY 10002', '220 West 23rd Street, New York, NY 10011'],
-        description: 'Excellent quality doughnuts in a variety of styles (cake, doughseed, yeast)', 
-        type: 'doughnuts' 
+        description: 'Excellent quality doughnuts in a variety of styles (cake, doughseed, yeast)',
+        type: 'doughnuts'
     },
-    { 
+    {
         name: 'Farmacy',
         img: ['https://i.imgur.com/p6bahW9.jpg', 'https://i.imgur.com/hws2SSP.png', 'https://i.imgur.com/WBUvUn3.png', 'https://i.imgur.com/7Vllkhc.png'],
         neighborhood: ['Carroll Gardens'],
@@ -89,7 +90,7 @@ let seedDesserts = [
     },
     {
         name: 'Four and Twenty Blackbirds',
-        img: ['https://playco.org/wp-content/uploads/2018/12/Four-Twenty-Blackbirds-Logo.jpg', 'https://www.ediblebrooklyn.com/wp-content/uploads/sites/2/2017/05/fourandtwentyblackbirds_VickyWasik-32.jpg', 'https://www.wholefoodsmarket.com/sites/default/files/media/Four_Twenty_Feature1_0.jpg', 'https://sagharborexpress.com/wp-content/uploads/2017/11/HA-Four-and-Twenty-Blackbirds-Chocolate-Chess_courtesy.jpg'],
+        img: ['https://i.imgur.com/3lv88rG.png', 'https://www.ediblebrooklyn.com/wp-content/uploads/sites/2/2017/05/fourandtwentyblackbirds_VickyWasik-32.jpg', 'https://i.imgur.com/Nor0Wi5.png', 'https://sagharborexpress.com/wp-content/uploads/2017/11/HA-Four-and-Twenty-Blackbirds-Chocolate-Chess_courtesy.jpg'],
         neighborhood: ['Gowanus'],
         borough: ['Brooklyn'],
         addressBk: ['439 3rd Avenue, Brooklyn 11215'],
@@ -98,7 +99,7 @@ let seedDesserts = [
         description: "You'll love these even if you don't like pie! Try the black bottom oat.",
         type: 'pie'
     },
-    { 
+    {
         name: 'Levain',
         img: ['https://i.imgur.com/zjBFpcG.jpg', 'https://i.imgur.com/gPJKwV9.jpg', 'https://i.imgur.com/pznLk7W.jpg', 'https://i.imgur.com/0RhWTbA.jpg'],
         neighborhood: ['Upper West Side', 'Harlem'],
@@ -121,9 +122,9 @@ let seedDesserts = [
         description: "Small local shop with seasonal flavors",
         type: 'ice cream'
     },
-    { 
+    {
         name: 'Morgenstern\'s',
-        img: ['http://static1.squarespace.com/static/5314b53ae4b0aeaef77036b7/5575d0c6e4b03ba05364d38a/5575d0f0e4b090675afb33d6/1532623215368/MFIC+-+Gift+Card+01.png?format=1500w', 'https://pixel.nymag.com/imgs/daily/grub/2018/10/11/morgensterns-west-houston/morgensterns_040.w1200.h630.jpg', 'http://cdn.firstwefeast.com/assets/2015/06/kanye-x-morgensterns_95.jpg', 'https://pixel.nymag.com/imgs/daily/grub/2018/10/11/morgensterns-west-houston/morgensterns_038.w700.h467.2x.jpg'],
+        img: ['https://i.imgur.com/JAbrLfa.png', 'https://pixel.nymag.com/imgs/daily/grub/2018/10/11/morgensterns-west-houston/morgensterns_040.w1200.h630.jpg', 'http://cdn.firstwefeast.com/assets/2015/06/kanye-x-morgensterns_95.jpg', 'https://pixel.nymag.com/imgs/daily/grub/2018/10/11/morgensterns-west-houston/morgensterns_038.w700.h467.2x.jpg'],
         neighborhood: ['Lower East Side, Greenwich Village'],
         borough: ['Manhattan'],
         addressBk: [],
@@ -155,6 +156,6 @@ let seedDesserts = [
         type: 'cupcakes'
     }
 
-  ]
-  
-  module.exports = seedDesserts;
+]
+
+module.exports = seedDesserts;
